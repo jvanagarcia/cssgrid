@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>assigment 5</title>
+	<style>
+.item1 { grid-area: header; 
+		color: azure;
+		}
+.item2 { grid-area: nav1; 
+		color: lightcyan
+		}
+.item3 { grid-area: nav2; 
+		color: lightcyan
+		}
+.item4 { grid-area: nav3;
+		color: lightcyan
+		}
+.item5 { grid-area: nav4;
+		color: lightcyan
+		}
+.item6 { grid-area: nav5;
+		color: lightcyan
+		}
+.item7 { 
+	grid-area: art1;
+	grid-row-start:3 ;
+	grid-row-end: 6;
+	color: whitesmoke;
+		}
+.item8 { grid-area: asi1;
+	grid-row-start:3 ;
+	grid-row-end: 6;
+	color: floralwhite;
+		}
+.item9 { grid-area: art0; 
+	grid-row-start:7 ;
+	grid-row-end: 9;
+	color: aqua;
+		}
+.item10 { grid-area: asi2; 
+	grid-row-start:10 ;
+	grid-row-end: 13;
+	color:floralwhite;
+		}
+.item11 { grid-area: art2; 
+	grid-row-start:10 ;
+	grid-row-end: 13;
+	color: whitesmoke;
+		}
+.item12 { grid-area: footer;
+	grid-row-start:14 ;
+	grid-row-end: 14;
+	color: azure;
+		}
+		
+.grid-container {
+  display: grid;
+  background-color: aqua;
+  grid-template-areas:
+    'header header header header header'
+    'nav1 nav2 nav3 nav4 nav5'
+	'art1 art1 art1 asi1 asi1'
+	'art0 art0 art0 art0 art0'
+	'asi2 asi2 art2 art2 art2'
+    'footer footer footer footer footer';
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color:black;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+		/*mobile view*/
+@media (max-width:400px){
+	.grid-container {
+  display: grid;
+  background-color: aqua;
+  grid-template-areas:
+    'header'
+    'nav1'
+	'nav2'
+	'nav3'
+	'nav4'
+	'nav5'
+	'art1'
+	'asi1'
+	'art0'
+	'asi2'
+	'art2'
+    'footer';
+  grid-gap: 10px;
+		padding: 10px; }
+.item1 {width:300px;
+}
+.item2 {width: 300px
+}
+.item3 {width: 300px
+}
+.item4 {width: 300px
+}
+.item5 {width: 300px
+}
+.item6 {width: 300px
+}
+.item7 {width: 300px
+}
+.item8 {width: 300px
+}
+.item9 {width: 300px
+}
+.item10 {width: 300px
+}
+.item11 {width: 300px
+}
+.item12 {width: 300px
+}
+}
+		/*tablet view*/
+@media (min-width:401px) and (max-width:768px){
+}
+       /*global destok view*/
+@media (min-width:769px){
+}
+    </style>
+	
+</head>
+
+<body>
+ <div class="grid-container">
+     <div class="item1">
+	 <h1>shark school</h1>
+	 <p>come and join us</p>
+	 </div>
+	 <div class="item2">start here</div>
+	 <div class="item3">prices</div>
+	 <div class="item4">location</div>
+	 <div class="item5">media</div>
+	 <div class="item6">about us</div>
+	 <div class="item7"><img src="surf.jpg" width="250" height="150" alt="surf"/></div>
+	 <div class="item8">
+	   <h2>lots of fun</h2>
+		 <p>your kids are going to love this surf summer lessons,</p>
+	 </div>
+	 <div class="item9">we garantize they are going to learn how to surf and they are going to love this place so much that they will want to come every year to visit us.</div>
+	 <div class="item10"><h3>The Team </h3>
+		 <p>our team is the most qualified to teach boys and girls of all ages and even adults as well</p></div>
+	 <div class="item11"><img src="groupsurf.jpg" width="250" height="150" alt="group"/></div>
+	 <div class="item12">sharks school™</div>
+	</div>
+
+</body>
+</html>
